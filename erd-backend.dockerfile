@@ -1,4 +1,4 @@
-# erd-backend/erd-backend.dockerfile
+# ./erd-backend/erd-backend.dockerfile
 # Use an official Node.js runtime as the base image
 FROM node:16
 
@@ -13,6 +13,7 @@ RUN npm install
 
 # Copy the rest of the application code to the working directory
 COPY . .
+
 
 # Expose the port the app runs on (adjust if your app runs on a different port)
 EXPOSE 8080
